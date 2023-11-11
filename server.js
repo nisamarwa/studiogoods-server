@@ -39,8 +39,8 @@ app.post('/create-checkout-session', async (req, res) =>{
                     quantity: item.quantity
                 }
             }),
-            success_url:'http://localhost:3001',
-            cancel_url:'http://localhost:3001/cart'
+            success_url:'https://studio-goods.vercel.app/',
+            cancel_url:'https://studio-goods.vercel.app/cart'
         })
         res.json({url:session.url})
     } catch(e){
